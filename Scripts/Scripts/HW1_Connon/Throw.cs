@@ -7,7 +7,7 @@ public class Throw : MonoBehaviour
     public Transform Target;
     public float firingAngle = 45.0f;
     public float gravity = 9.8f;
-    private float airdrag = 50f;
+    //private float airdrag = 50f;
 
     public Transform Projectile;
     private Transform myTransform;
