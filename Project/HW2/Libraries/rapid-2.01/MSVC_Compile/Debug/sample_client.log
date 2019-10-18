@@ -1,0 +1,4 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (.\Debug\) contains files shared from another project (RAPID.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  cl : Command line warning D9035 : option 'Gm' has been deprecated and will be removed in a future release
+  cl : Command line error D8016 : '/ZI' and '/Gy-' command-line options are incompatible
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(429,5): error MSB6006: "CL.exe" exited with code 2.

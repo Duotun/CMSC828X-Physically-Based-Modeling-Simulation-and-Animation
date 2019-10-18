@@ -1,0 +1,9 @@
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Build_React\RapidDllCsharp\RapidDllCsharp\bin\Debug\netstandard2.0\RapidDllCsharp.deps.json
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Build_React\RapidDllCsharp\RapidDllCsharp\bin\Debug\netstandard2.0\RapidDllCsharp.dll
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Build_React\RapidDllCsharp\RapidDllCsharp\bin\Debug\netstandard2.0\RapidDllCsharp.pdb
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Build_React\RapidDllCsharp\RapidDllCsharp\obj\Debug\netstandard2.0\RapidDllCsharp.csprojAssemblyReference.cache
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Build_React\RapidDllCsharp\RapidDllCsharp\obj\Debug\netstandard2.0\RapidDllCsharp.csproj.CoreCompileInputs.cache
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Build_React\RapidDllCsharp\RapidDllCsharp\obj\Debug\netstandard2.0\RapidDllCsharp.AssemblyInfoInputs.cache
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Build_React\RapidDllCsharp\RapidDllCsharp\obj\Debug\netstandard2.0\RapidDllCsharp.AssemblyInfo.cs
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Build_React\RapidDllCsharp\RapidDllCsharp\obj\Debug\netstandard2.0\RapidDllCsharp.dll
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Build_React\RapidDllCsharp\RapidDllCsharp\obj\Debug\netstandard2.0\RapidDllCsharp.pdb

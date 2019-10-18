@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/BulletPhysics/Demo_Shapes_NumberandSize.unity
+- path: Assets/BulletSharp/Examples/Scenes/BulletSharpDemos/ExampleRunner.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

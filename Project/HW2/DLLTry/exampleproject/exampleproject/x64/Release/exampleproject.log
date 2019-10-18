@@ -1,0 +1,7 @@
+﻿  Header.cpp
+     Creating library E:\UMD\Course\CMSC 828X\Assignments\HW2\DLLTry\exampleproject\x64\Release\exampleproject.lib and object E:\UMD\Course\CMSC 828X\Assignments\HW2\DLLTry\exampleproject\x64\Release\exampleproject.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 1 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  exampleproject.vcxproj -> E:\UMD\Course\CMSC 828X\Assignments\HW2\DLLTry\exampleproject\x64\Release\exampleproject.dll

@@ -300,10 +300,16 @@ MonoBehaviour:
   ropePrefab: {fileID: 130762, guid: af52e21ec4947434c94d9f850a07b571, type: 3}
   softBodyPrefab: {fileID: 197868, guid: 2736f39d7e2232f448b634b648a68649, type: 3}
   createdObjs: []
-  IsDebugDrawEnabled: 1
+  IsDebugDrawEnabled: 0
   demoNames:
   - BasicDemo
-  - BasicDemo
+  - DistanceDemo
+  gravity:
+    X: 0
+    Y: 0
+    Z: 0
+  mass: 0
+  size: 0
 --- !u!4 &1449856088
 Transform:
   m_ObjectHideFlags: 0

@@ -265,7 +265,7 @@ namespace DemoFramework
                 var watch = System.Diagnostics.Stopwatch.StartNew();
                 _world.StepSimulation(_frameDelta);
                 watch.Stop();
-                UnityEngine.Debug.Log("One-step: " + watch.Elapsed.TotalMilliseconds) ;
+                //UnityEngine.Debug.Log("One-step: " + watch.Elapsed.TotalMilliseconds) ;
                 //UnityEngine.Debug.Log("One-step: " + 1.0f/(watch.Elapsed.TotalSeconds));
             }
 

@@ -1,0 +1,29 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (.\Debug\) contains files shared from another project (sample_client.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  build.cpp
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\build.cpp(44,57): error C3680:  cannot concatenate user-defined string literals with mismatched literal suffix identifiers
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\build.cpp(44,57): message :  Concatenating suffix '__FILE__' with suffix '__DATE__'
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\build.cpp(44,77): error C3680:  cannot concatenate user-defined string literals with mismatched literal suffix identifiers
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\build.cpp(44,77): message :  Concatenating suffix '__FILE__' with suffix '__TIME__'
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\build.cpp(44,97): error C3688:  invalid literal suffix '__FILE__'; literal operator or literal operator template 'operator ""__FILE__' not found
+  collide.cpp
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\RAPID_private.H(24,19): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\collide.cpp(45,57): error C3680:  cannot concatenate user-defined string literals with mismatched literal suffix identifiers
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\collide.cpp(45,57): message :  Concatenating suffix '__FILE__' with suffix '__DATE__'
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\collide.cpp(45,77): error C3680:  cannot concatenate user-defined string literals with mismatched literal suffix identifiers
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\collide.cpp(45,77): message :  Concatenating suffix '__FILE__' with suffix '__TIME__'
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\collide.cpp(45,97): error C3688:  invalid literal suffix '__FILE__'; literal operator or literal operator template 'operator ""__FILE__' not found
+  overlap.C
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\RAPID_private.H(24,19): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\overlap.C(44,57): error C3680:  cannot concatenate user-defined string literals with mismatched literal suffix identifiers
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\overlap.C(44,57): message :  Concatenating suffix '__FILE__' with suffix '__DATE__'
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\overlap.C(44,77): error C3680:  cannot concatenate user-defined string literals with mismatched literal suffix identifiers
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\overlap.C(44,77): message :  Concatenating suffix '__FILE__' with suffix '__TIME__'
+  RAPID.C
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\overlap.C(44,97): error C3688:  invalid literal suffix '__FILE__'; literal operator or literal operator template 'operator ""__FILE__' not found
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\RAPID.C(43,57): error C3680:  cannot concatenate user-defined string literals with mismatched literal suffix identifiers
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\RAPID.C(43,57): message :  Concatenating suffix '__FILE__' with suffix '__DATE__'
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\RAPID.C(43,77): error C3680:  cannot concatenate user-defined string literals with mismatched literal suffix identifiers
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\RAPID.C(43,77): message :  Concatenating suffix '__FILE__' with suffix '__TIME__'
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\RAPID.C(43,97): error C3688:  invalid literal suffix '__FILE__'; literal operator or literal operator template 'operator ""__FILE__' not found
+  Generating Code...
+E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\rapid-2.01\RAPID_private.H(24,19): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
