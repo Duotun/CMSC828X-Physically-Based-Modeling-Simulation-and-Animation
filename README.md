@@ -10,3 +10,5 @@ Homework 2: Collision Detection Between Rigid Bodies
 - In Unity & OpenGL
 - User Control for Multiple Shapes and LOD (Level of Details)
 - 3 Different Libraries
+
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
