@@ -6,7 +6,9 @@ Homework 1: ODE’s & Particle Dynamics
 - User Control and A Analytical Panel
 - 3 Integration Methods
 
+Click on the following images for video demos: 
 [![Watch the video](https://img.youtube.com/vi/bkrMF_pXpmU/hqdefault.jpg)](https://youtu.be/bkrMF_pXpmU)
+[![Watch the video](https://img.youtube.com/vi/3cferuNZXvc/hqdefault.jpg)](https://youtu.be/3cferuNZXvc)
 
 Homework 2: Collision Detection Between Rigid Bodies
 - In Unity & OpenGL
