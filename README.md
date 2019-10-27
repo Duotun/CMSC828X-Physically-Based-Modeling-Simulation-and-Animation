@@ -1,4 +1,4 @@
-# CMSC828X Physically-Based Modeling, Simulation and Animation
+# CMSC828X: Physically-Based Modeling, Simulation and Animation
 ## Assignments
 
 Homework 1: ODE’s & Particle Dynamics
