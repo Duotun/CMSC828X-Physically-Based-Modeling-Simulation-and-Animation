@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AF96A74B-44EA-3AE9-AC1E-8855816EC0FC}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>reactphysics3d</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">reactphysics3d.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">reactphysics3d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">reactphysics3d.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">reactphysics3d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">reactphysics3d.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">reactphysics3d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">reactphysics3d.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">reactphysics3d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -g -O0 -fprofile-arcs -ftest-coverage</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;IS_PROFILING_ACTIVE;IS_LOGGING_ACTIVE;IS_DOUBLE_PRECISION_ENABLED;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;IS_PROFILING_ACTIVE;IS_LOGGING_ACTIVE;IS_DOUBLE_PRECISION_ENABLED;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -g -O0 -fprofile-arcs -ftest-coverage</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IS_PROFILING_ACTIVE;IS_LOGGING_ACTIVE;IS_DOUBLE_PRECISION_ENABLED;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IS_PROFILING_ACTIVE;IS_LOGGING_ACTIVE;IS_DOUBLE_PRECISION_ENABLED;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -g -O0 -fprofile-arcs -ftest-coverage</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IS_PROFILING_ACTIVE;IS_LOGGING_ACTIVE;IS_DOUBLE_PRECISION_ENABLED;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IS_PROFILING_ACTIVE;IS_LOGGING_ACTIVE;IS_DOUBLE_PRECISION_ENABLED;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -g -O0 -fprofile-arcs -ftest-coverage</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IS_PROFILING_ACTIVE;IS_LOGGING_ACTIVE;IS_DOUBLE_PRECISION_ENABLED;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IS_PROFILING_ACTIVE;IS_LOGGING_ACTIVE;IS_DOUBLE_PRECISION_ENABLED;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\Cmake\bin\cmake.exe "-SE:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1" "-BE:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing" --check-stamp-file "E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Cmake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;D:\Cmake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Cmake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;D:\Cmake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;D:\Cmake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;D:\Cmake\share\cmake-3.16\Modules\Platform\Windows.cmake;D:\Cmake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\CMakeFiles\3.16.0-rc1\CMakeCXXCompiler.cmake;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\CMakeFiles\3.16.0-rc1\CMakeRCCompiler.cmake;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\CMakeFiles\3.16.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\Cmake\bin\cmake.exe "-SE:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1" "-BE:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing" --check-stamp-file "E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Cmake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;D:\Cmake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Cmake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;D:\Cmake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;D:\Cmake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;D:\Cmake\share\cmake-3.16\Modules\Platform\Windows.cmake;D:\Cmake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\CMakeFiles\3.16.0-rc1\CMakeCXXCompiler.cmake;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\CMakeFiles\3.16.0-rc1\CMakeRCCompiler.cmake;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\CMakeFiles\3.16.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\Cmake\bin\cmake.exe "-SE:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1" "-BE:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing" --check-stamp-file "E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Cmake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;D:\Cmake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Cmake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;D:\Cmake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;D:\Cmake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;D:\Cmake\share\cmake-3.16\Modules\Platform\Windows.cmake;D:\Cmake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\CMakeFiles\3.16.0-rc1\CMakeCXXCompiler.cmake;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\CMakeFiles\3.16.0-rc1\CMakeRCCompiler.cmake;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\CMakeFiles\3.16.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\Cmake\bin\cmake.exe "-SE:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1" "-BE:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing" --check-stamp-file "E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Cmake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;D:\Cmake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;D:\Cmake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Cmake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;D:\Cmake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;D:\Cmake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;D:\Cmake\share\cmake-3.16\Modules\Platform\Windows.cmake;D:\Cmake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\CMakeFiles\3.16.0-rc1\CMakeCXXCompiler.cmake;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\CMakeFiles\3.16.0-rc1\CMakeRCCompiler.cmake;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\CMakeFiles\3.16.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\configuration.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\decimal.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\reactphysics3d.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\body\Body.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\body\CollisionBody.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\body\RigidBody.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\ContactPointInfo.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\ContactManifoldInfo.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\broadphase\BroadPhaseAlgorithm.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\broadphase\DynamicAABBTree.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\CollisionDispatch.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\DefaultCollisionDispatch.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\GJK\VoronoiSimplex.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\GJK\GJKAlgorithm.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\SAT\SATAlgorithm.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\NarrowPhaseAlgorithm.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\SphereVsSphereAlgorithm.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\CapsuleVsCapsuleAlgorithm.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\SphereVsCapsuleAlgorithm.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\SphereVsConvexPolyhedronAlgorithm.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\CapsuleVsConvexPolyhedronAlgorithm.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\ConvexPolyhedronVsConvexPolyhedronAlgorithm.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\AABB.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\ConvexShape.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\ConvexPolyhedronShape.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\ConcaveShape.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\BoxShape.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\CapsuleShape.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\CollisionShape.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\ConvexMeshShape.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\SphereShape.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\TriangleShape.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\ConcaveMeshShape.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\HeightFieldShape.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\RaycastInfo.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\ProxyShape.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\TriangleVertexArray.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\PolygonVertexArray.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\TriangleMesh.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\PolyhedronMesh.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\HalfEdgeStructure.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\CollisionDetection.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\NarrowPhaseInfo.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\ContactManifold.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\ContactManifoldSet.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\MiddlePhaseTriangleCallback.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\constraint\BallAndSocketJoint.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\constraint\ContactPoint.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\constraint\FixedJoint.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\constraint\HingeJoint.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\constraint\Joint.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\constraint\SliderJoint.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\engine\CollisionWorld.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\engine\ConstraintSolver.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\engine\ContactSolver.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\engine\DynamicsWorld.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\engine\EventListener.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\engine\Island.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\engine\Material.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\engine\OverlappingPair.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\engine\Timer.h" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\engine\Timer.cpp" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\CollisionCallback.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\OverlapCallback.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\mathematics\mathematics.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\mathematics\mathematics_functions.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\mathematics\Matrix2x2.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\mathematics\Matrix3x3.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\mathematics\Quaternion.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\mathematics\Transform.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\mathematics\Vector2.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\mathematics\Vector3.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\mathematics\Ray.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\memory\MemoryAllocator.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\memory\DefaultPoolAllocator.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\memory\DefaultSingleFrameAllocator.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\memory\DefaultAllocator.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\memory\MemoryManager.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\containers\Stack.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\containers\LinkedList.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\containers\List.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\containers\Map.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\containers\Set.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\containers\Pair.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\utils\Profiler.h" />
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\utils\Logger.h" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\body\Body.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\body\CollisionBody.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\body\RigidBody.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\ContactManifoldInfo.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\broadphase\BroadPhaseAlgorithm.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\broadphase\DynamicAABBTree.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\DefaultCollisionDispatch.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\GJK\VoronoiSimplex.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\GJK\GJKAlgorithm.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\SAT\SATAlgorithm.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\SphereVsSphereAlgorithm.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\CapsuleVsCapsuleAlgorithm.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\SphereVsCapsuleAlgorithm.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\SphereVsConvexPolyhedronAlgorithm.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\CapsuleVsConvexPolyhedronAlgorithm.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\narrowphase\ConvexPolyhedronVsConvexPolyhedronAlgorithm.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\AABB.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\ConvexShape.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\ConvexPolyhedronShape.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\ConcaveShape.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\BoxShape.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\CapsuleShape.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\CollisionShape.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\ConvexMeshShape.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\SphereShape.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\TriangleShape.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\ConcaveMeshShape.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\shapes\HeightFieldShape.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\RaycastInfo.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\ProxyShape.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\TriangleVertexArray.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\PolygonVertexArray.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\TriangleMesh.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\PolyhedronMesh.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\HalfEdgeStructure.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\CollisionDetection.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\NarrowPhaseInfo.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\ContactManifold.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\ContactManifoldSet.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\MiddlePhaseTriangleCallback.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\constraint\BallAndSocketJoint.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\constraint\ContactPoint.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\constraint\FixedJoint.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\constraint\HingeJoint.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\constraint\Joint.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\constraint\SliderJoint.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\engine\CollisionWorld.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\engine\ConstraintSolver.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\engine\ContactSolver.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\engine\DynamicsWorld.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\engine\Island.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\engine\Material.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\engine\OverlappingPair.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\collision\CollisionCallback.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\mathematics\mathematics_functions.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\mathematics\Matrix2x2.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\mathematics\Matrix3x3.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\mathematics\Quaternion.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\mathematics\Transform.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\mathematics\Vector2.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\mathematics\Vector3.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\memory\DefaultPoolAllocator.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\memory\DefaultSingleFrameAllocator.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\memory\MemoryManager.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\utils\Profiler.cpp" />
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\src\utils\Logger.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\ZERO_CHECK.vcxproj">
+      <Project>{FB4609EF-E167-3F1D-B57E-59D4E3EE654B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

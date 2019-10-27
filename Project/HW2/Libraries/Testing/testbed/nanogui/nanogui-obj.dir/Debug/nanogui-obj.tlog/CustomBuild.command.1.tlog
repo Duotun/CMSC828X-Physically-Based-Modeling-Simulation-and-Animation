@@ -1,0 +1,20 @@
+^E:\UMD\COURSE\CMSC 828X\ASSIGNMENTS\HW2\LIBRARIES\TESTING\CMAKEFILES\4F1D09EE33DBCFD0F0CE9033B38DCF5F\NANOGUI_RESOURCES.CPP.RULE
+setlocal
+D:\Cmake\bin\cmake.exe -DOUTPUT_C=nanogui_resources.cpp -DOUTPUT_H=nanogui_resources.h "-DINPUT_FILES=E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1/testbed/nanogui/resources/Roboto-Bold.ttf,E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1/testbed/nanogui/resources/Roboto-Regular.ttf,E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1/testbed/nanogui/resources/entypo.ttf" -P "E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1/testbed/nanogui/resources/bin2c.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\UMD\COURSE\CMSC 828X\ASSIGNMENTS\HW2\LIBRARIES\REACTPHYSICS3D-0.7.1\REACTPHYSICS3D-0.7.1\TESTBED\NANOGUI\CMAKELISTS.TXT
+setlocal
+D:\Cmake\bin\cmake.exe "-SE:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1" "-BE:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing" --check-stamp-file "E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing/testbed/nanogui/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

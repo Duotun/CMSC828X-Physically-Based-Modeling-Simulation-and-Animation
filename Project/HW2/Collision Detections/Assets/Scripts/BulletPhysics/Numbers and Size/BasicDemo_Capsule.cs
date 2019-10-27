@@ -12,11 +12,11 @@ namespace BasicDemo_Capsule
         Vector3 target = new Vector3(0, 5, -4);
 
         // create 125 (5x5x5) dynamic objects
-        const int ArraySizeX = 3, ArraySizeY = 5, ArraySizeZ = 5;
+        const int ArraySizeX = 5, ArraySizeY = 5, ArraySizeZ = 2;
 
         // scaling of the objects (0.1 = 20 centimeter boxes )
         const float StartPosX = -5;
-        const float StartPosY = -5;
+        const float StartPosY = -3;
         const float StartPosZ = -3;
 
         float mass = 1f;
@@ -38,7 +38,7 @@ namespace BasicDemo_Capsule
         {
             Freelook.SetEyeTarget(eye, target);
 
-            Graphics.SetFormText("BulletSharp - Basic Demo_Mixed");
+            Graphics.SetFormText("BulletSharp - Basic Demo_Capsule");
         }
 
         protected override void OnInitializePhysics()
@@ -47,9 +47,10 @@ namespace BasicDemo_Capsule
             CollisionConf = new DefaultCollisionConfiguration();
             Dispatcher = new CollisionDispatcher(CollisionConf);
 
-            Broadphase = new DbvtBroadphase();
+            //AxisSweep3 s = new AxisSweep3(Vector3.One, new Vector3(50, 50, 50));
 
             World = new DiscreteDynamicsWorld(Dispatcher, Broadphase, null, CollisionConf);
+            //World = new DiscreteDynamicsWorld(Dispatcher, s, null, CollisionConf);
             World.Gravity = this.gravity;
 
             // create the ground

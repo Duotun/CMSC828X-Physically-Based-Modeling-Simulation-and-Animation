@@ -34,7 +34,7 @@ using namespace openglframework;
 
 int SceneDemo::shadowMapTextureLevel = 0;
 openglframework::Color SceneDemo::mGreyColorDemo = Color(0.0f, 0.70f, 0.7f, 1.0f);
-openglframework::Color SceneDemo::mTransparentDemo = Color(0.0f,0.0f,1.0f,0.05f);
+openglframework::Color SceneDemo::mTransparentDemo = Color(0.0f,0.0f,0.5f,0.01f);
 openglframework::Color SceneDemo::mYellowColorDemo = Color(0.9f, 0.88f, 0.145f, 1.0f);
 openglframework::Color SceneDemo::mBlueColorDemo = Color(0, 0.66f, 0.95f, 1.0f);
 openglframework::Color SceneDemo::mOrangeColorDemo = Color(0.9f, 0.35f, 0, 1.0f);
@@ -449,7 +449,7 @@ void SceneDemo::updateEngineSettings() {
     if (getDynamicsWorld() != nullptr) {
 
         // Update the physics engine parameters
-        getDynamicsWorld()->setIsGratityEnabled(!mEngineSettings.isGravityEnabled);   //no gravity here
+       // getDynamicsWorld()->setIsGratityEnabled(!mEngineSettings.isGravityEnabled);   //no gravity here
         rp3d::Vector3 gravity(mEngineSettings.gravity.x, mEngineSettings.gravity.y,
                          mEngineSettings.gravity.z);
         getDynamicsWorld()->setGravity(gravity);

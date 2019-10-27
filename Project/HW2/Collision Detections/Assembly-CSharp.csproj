@@ -191,12 +191,11 @@
     <Compile Include="Assets\MantisLODEditor\Demo\Scripts\MoveMe.cs" />
     <Compile Include="Assets\MantisLODEditor\Demo\Scripts\RotateMe.cs" />
     <Compile Include="Assets\MantisLODEditor\Runtime\ProgressiveMeshRuntime.cs" />
-    <Compile Include="Assets\rigi.cs" />
     <Compile Include="Assets\Scripts\BulletPhysics\Numbers and Size\BasicDemo.cs" />
     <Compile Include="Assets\Scripts\BulletPhysics\Numbers and Size\BasicDemo_Capsule.cs" />
     <Compile Include="Assets\Scripts\BulletPhysics\Numbers and Size\BasicDemo_Cone.cs" />
     <Compile Include="Assets\Scripts\BulletPhysics\Numbers and Size\BasicDemo_Mixed.cs" />
-    <Compile Include="Assets\Scripts\FlyCamera.cs" />
+    <Compile Include="Assets\Scripts\NvidiaPhysics\Brutal.cs" />
     <Compile Include="Assets\Scripts\NvidiaPhysics\LOD_Control.cs" />
     <Compile Include="Assets\Scripts\NvidiaPhysics\Shape_Control.cs" />
     <Compile Include="Assets\Scripts\RapidLibrary\RapidDetection.cs" />

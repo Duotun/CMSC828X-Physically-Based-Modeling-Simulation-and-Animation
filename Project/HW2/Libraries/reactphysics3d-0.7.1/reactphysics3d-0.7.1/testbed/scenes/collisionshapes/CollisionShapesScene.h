@@ -56,13 +56,16 @@ const float CYLINDER_HEIGHT = 5.0f;
 const float CAPSULE_RADIUS = 1.0f;
 const float CAPSULE_HEIGHT = 1.0f;
 const float DUMBBELL_HEIGHT = 1.0f;
-const openglframework::Vector3 FLOOR_SIZE(50, 0.5f, 50);        // Floor dimensions in meters
+//const openglframework::Vector3 FLOOR_SIZE(50, 0.5f, 50);        // Floor dimensions in meters
 const float BOX_MASS = 1.0f;
 const float CONE_MASS = 1.0f;
 const float CYLINDER_MASS = 1.0f;
 const float CAPSULE_MASS = 1.0f;
 const float MESH_MASS = 1.0f;
 const float FLOOR_MASS = 100.0f;                            // Floor mass in kilograms
+const openglframework::Vector3 FLOOR_SIZE(160, 1, 160);   // Floor dimensions in meters
+const openglframework::Vector3 FLOOR_SIZE_1(160, 160, 1);
+const openglframework::Vector3 FLOOR_SIZE_2(1, 160, 160);
 
 // Class CollisionShapesScene
 class CollisionShapesScene : public SceneDemo {
@@ -86,6 +89,11 @@ class CollisionShapesScene : public SceneDemo {
 
         /// Box for the floor
         Box* mFloor;
+		Box* mFloor_up;
+		Box* mFloor_left;
+		Box* mFloor_right;
+		Box* mFloor_forward;
+		Box* mFloor_backward;
 
     public:
 

@@ -12,11 +12,11 @@ namespace BasicDemo_Cone
         Vector3 target = new Vector3(0, 5, -4);
 
         // create 125 (5x5x5) dynamic objects
-        const int ArraySizeX = 3, ArraySizeY = 5, ArraySizeZ = 5;
+        const int ArraySizeX = 5, ArraySizeY = 5, ArraySizeZ = 2;
 
         // scaling of the objects (0.1 = 20 centimeter boxes )
         const float StartPosX = -5;
-        const float StartPosY = -5;
+        const float StartPosY = -3;
         const float StartPosZ = -3;
 
         float mass = 1f;

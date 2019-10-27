@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\src\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\src\TestbedApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\src\Gui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\src\Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\src\SceneDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\src\Timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\scenes\cubes\CubesScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\scenes\joints\JointsScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\scenes\raycast\RaycastScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\scenes\collisionshapes\CollisionShapesScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\scenes\collisiondetection\CollisionDetectionScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\scenes\concavemesh\ConcaveMeshScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\scenes\heightfield\HeightFieldScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\scenes\cubestack\CubeStackScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\Box.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\Sphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\Line.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\Capsule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\ConvexMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\ConcaveMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\Dumbbell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\HeightField.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\PhysicsObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\VisualContactPoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\PerlinNoise.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\AABB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\FrameBufferObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\Light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\MeshReaderWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\Object3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\Texture2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\TextureReaderWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\VertexBufferObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\VertexArrayObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\src\TestbedApplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\src\Gui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\src\Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\src\SceneDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\src\Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\scenes\cubes\CubesScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\scenes\joints\JointsScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\scenes\raycast\RaycastScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\scenes\collisionshapes\CollisionShapesScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\scenes\collisiondetection\CollisionDetectionScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\scenes\concavemesh\ConcaveMeshScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\scenes\heightfield\HeightFieldScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\scenes\cubestack\CubeStackScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\Box.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\Sphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\Line.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\Capsule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\ConvexMesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\ConcaveMesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\Dumbbell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\HeightField.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\PhysicsObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\VisualContactPoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\PerlinNoise.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\common\AABB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\maths\Color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\maths\Matrix3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\maths\Matrix4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\maths\Vector2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\maths\Vector3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\maths\Vector4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\definitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\FrameBufferObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\Light.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\MeshReaderWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\Object3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\openglframework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\Texture2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\TextureReaderWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\VertexBufferObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\opengl-framework\src\VertexArrayObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{050E5376-AED3-32AC-9340-F732AC46F77E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5DC47006-D164-3396-80F1-558380C199AD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

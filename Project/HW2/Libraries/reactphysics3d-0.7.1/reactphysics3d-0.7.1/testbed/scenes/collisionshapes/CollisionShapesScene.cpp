@@ -62,7 +62,8 @@ CollisionShapesScene::CollisionShapesScene(const std::string& name, EngineSettin
 
         // Change the material properties of the rigid body
         rp3d::Material& material = dumbbell->getRigidBody()->getMaterial();
-        material.setBounciness(rp3d::decimal(0.2));
+        //material.setBounciness(rp3d::decimal(0.2));
+		material.setBounciness(rp3d::decimal(1));
 
         // Add the mesh the list of dumbbells in the scene
         mDumbbells.push_back(dumbbell);
@@ -81,7 +82,8 @@ CollisionShapesScene::CollisionShapesScene(const std::string& name, EngineSettin
 
         // Change the material properties of the rigid body
         rp3d::Material& material = box->getRigidBody()->getMaterial();
-        material.setBounciness(rp3d::decimal(0.2));
+        //material.setBounciness(rp3d::decimal(0.2));
+		material.setBounciness(rp3d::decimal(1));
 
         // Add the sphere the list of sphere in the scene
         mBoxes.push_back(box);
@@ -103,7 +105,8 @@ CollisionShapesScene::CollisionShapesScene(const std::string& name, EngineSettin
 
         // Change the material properties of the rigid body
         rp3d::Material& material = sphere->getRigidBody()->getMaterial();
-        material.setBounciness(rp3d::decimal(0.2));
+        //material.setBounciness(rp3d::decimal(0.2));
+		material.setBounciness(rp3d::decimal(1));
 
         // Add the sphere the list of sphere in the scene
         mSpheres.push_back(sphere);
@@ -125,7 +128,8 @@ CollisionShapesScene::CollisionShapesScene(const std::string& name, EngineSettin
 
         // Change the material properties of the rigid body
         rp3d::Material& material = capsule->getRigidBody()->getMaterial();
-        material.setBounciness(rp3d::decimal(0.2));
+        //material.setBounciness(rp3d::decimal(0.2));
+		material.setBounciness(rp3d::decimal(1));
 
         // Add the cylinder the list of sphere in the scene
         mCapsules.push_back(capsule);
@@ -144,7 +148,8 @@ CollisionShapesScene::CollisionShapesScene(const std::string& name, EngineSettin
 
         // Change the material properties of the rigid body
         rp3d::Material& material = mesh->getRigidBody()->getMaterial();
-        material.setBounciness(rp3d::decimal(0.2));
+        //material.setBounciness(rp3d::decimal(0.2));
+		material.setBounciness(rp3d::decimal(1));
 
         // Add the mesh the list of sphere in the scene
         mConvexMeshes.push_back(mesh);
@@ -152,13 +157,13 @@ CollisionShapesScene::CollisionShapesScene(const std::string& name, EngineSettin
     }
 
     // ---------- Create the floor ---------
-
+   /*
     mFloor = new Box(FLOOR_SIZE, FLOOR_MASS, getDynamicsWorld(), mMeshFolderPath);
 	mPhysicsObjects.push_back(mFloor);
 
     // Set the box color
-    mFloor->setColor(mGreyColorDemo);
-    mFloor->setSleepingColor(mGreyColorDemo);
+    mFloor->setColor(mTransparentDemo);
+    mFloor->setSleepingColor(mTransparentDemo);
 
     // The floor must be a static rigid body
     mFloor->getRigidBody()->setType(rp3d::BodyType::STATIC);
@@ -166,9 +171,85 @@ CollisionShapesScene::CollisionShapesScene(const std::string& name, EngineSettin
     // Change the material properties of the rigid body
     rp3d::Material& material = mFloor->getRigidBody()->getMaterial();
     material.setBounciness(rp3d::decimal(0.2));
+   */
+
+   // Compute the radius and the center of the scene
+   // Create the floor
+	mFloor = new Box(FLOOR_SIZE, FLOOR_MASS, getDynamicsWorld(), mMeshFolderPath);
+	mFloor->setColor(mTransparentDemo);
+	mFloor->setSleepingColor(mTransparentDemo);
+	//mFloor_up->setTransform(rp3d::Transform(rp3d::Vector3(0, -40, 0), rp3d::Quaternion::identity()));
+	//mFloor->setColor(mGreyColorDemo);
+	//mFloor->setSleepingColor(mGreyColorDemo);
+
+	// The floor must be a static rigid body
+	mFloor->getRigidBody()->setType(rp3d::BodyType::STATIC);
+	mPhysicsObjects.push_back(mFloor);
+
+
+	mFloor_up = new Box(FLOOR_SIZE, FLOOR_MASS, getDynamicsWorld(), mMeshFolderPath);
+	mFloor_up->setColor(mTransparentDemo);
+	mFloor_up->setSleepingColor(mTransparentDemo);
+
+	//mFloor->setColor(mGreyColorDemo);
+	//mFloor->setSleepingColor(mGreyColorDemo);
+
+	// The floor must be a static rigid body
+	mFloor_up->setTransform(rp3d::Transform(rp3d::Vector3(0, 160, 0), rp3d::Quaternion::identity()));
+	mFloor_up->getRigidBody()->setType(rp3d::BodyType::STATIC);
+	mPhysicsObjects.push_back(mFloor_up);
+
+
+	mFloor_backward = new Box(FLOOR_SIZE_1, FLOOR_MASS, getDynamicsWorld(), mMeshFolderPath);
+	mFloor_backward->setColor(mTransparentDemo);
+	mFloor_backward->setSleepingColor(mTransparentDemo);
+	//mFloor->setColor(mGreyColorDemo);
+	//mFloor->setSleepingColor(mGreyColorDemo);
+
+	// The floor must be a static rigid body
+	mFloor_backward->setTransform(rp3d::Transform(rp3d::Vector3(0, 80, -80), rp3d::Quaternion::identity()));
+	mFloor_backward->getRigidBody()->setType(rp3d::BodyType::STATIC);
+	mPhysicsObjects.push_back(mFloor_backward);
+
+	mFloor_forward = new Box(FLOOR_SIZE_1, FLOOR_MASS, getDynamicsWorld(), mMeshFolderPath);
+	mFloor_forward->setColor(mTransparentDemo);
+	mFloor_forward->setSleepingColor(mTransparentDemo);
+	//mFloor->setColor(mGreyColorDemo);
+	//mFloor->setSleepingColor(mGreyColorDemo);
+
+	// The floor must be a static rigid body
+	mFloor_forward->setTransform(rp3d::Transform(rp3d::Vector3(0, 80, 80), rp3d::Quaternion::identity()));
+	mFloor_forward->getRigidBody()->setType(rp3d::BodyType::STATIC);
+	mPhysicsObjects.push_back(mFloor_forward);
+
+	mFloor_left = new Box(FLOOR_SIZE_2, FLOOR_MASS, getDynamicsWorld(), mMeshFolderPath);
+	mFloor_left->setColor(mTransparentDemo);
+	mFloor_left->setSleepingColor(mTransparentDemo);
+	//mFloor->setColor(mGreyColorDemo);
+	//mFloor->setSleepingColor(mGreyColorDemo);
+
+	// The floor must be a static rigid body
+	mFloor_left->setTransform(rp3d::Transform(rp3d::Vector3(80, 80, 0), rp3d::Quaternion::identity()));
+	mFloor_left->getRigidBody()->setType(rp3d::BodyType::STATIC);
+	mPhysicsObjects.push_back(mFloor_left);
+
+	mFloor_right = new Box(FLOOR_SIZE_2, FLOOR_MASS, getDynamicsWorld(), mMeshFolderPath);
+	mFloor_right->setColor(mTransparentDemo);
+	mFloor_right->setSleepingColor(mTransparentDemo);
+	//mFloor->setColor(mGreyColorDemo);
+	//mFloor->setSleepingColor(mGreyColorDemo);
+
+	// The floor must be a static rigid body
+	mFloor_right->setTransform(rp3d::Transform(rp3d::Vector3(-80, 80, 0), rp3d::Quaternion::identity()));
+	mFloor_right->getRigidBody()->setType(rp3d::BodyType::STATIC);
+	mPhysicsObjects.push_back(mFloor_right);
+
+
+
 
     // Get the physics engine parameters
-    mEngineSettings.isGravityEnabled = getDynamicsWorld()->isGravityEnabled();
+	getDynamicsWorld()->setIsGratityEnabled(true);
+    //mEngineSettings.isGravityEnabled = !getDynamicsWorld()->isGravityEnabled();
     rp3d::Vector3 gravityVector = getDynamicsWorld()->getGravity();
     mEngineSettings.gravity = openglframework::Vector3(gravityVector.x, gravityVector.y, gravityVector.z);
     mEngineSettings.isSleepingEnabled = getDynamicsWorld()->isSleepingEnabled();

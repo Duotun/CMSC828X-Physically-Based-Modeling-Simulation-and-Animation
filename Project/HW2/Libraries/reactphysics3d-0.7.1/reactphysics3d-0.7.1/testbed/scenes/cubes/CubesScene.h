@@ -36,8 +36,8 @@ namespace cubesscene {
 
 // Constants
 const float SCENE_RADIUS = 30.0f;                           // Radius of the scene in meters
-const int NB_CUBES = 30;                                    // Number of boxes in the scene
-const openglframework::Vector3 BOX_SIZE(2, 2, 2);          // Box dimensions in meters
+const int NB_CUBES = 200;                                    // Number of boxes in the scene
+const openglframework::Vector3 BOX_SIZE(0.04, 0.04, 0.04);          // Box dimensions in meters
 const openglframework::Vector3 FLOOR_SIZE(80, 1, 80);   // Floor dimensions in meters
 const openglframework::Vector3 FLOOR_SIZE_1(80, 80, 1);
 const openglframework::Vector3 FLOOR_SIZE_2(1,80,80);

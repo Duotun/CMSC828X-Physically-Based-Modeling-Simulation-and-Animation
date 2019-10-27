@@ -26,6 +26,8 @@ public class Shape_Control : MonoBehaviour
     float mass_cone = 1.0f;
     float mass_capsule = 1.0f;
     float mass_cylinder = 1.0f;
+
+    float size_now = 1.0f;
     void Start()
     {
         if (cubeflag)
@@ -181,7 +183,7 @@ public class Shape_Control : MonoBehaviour
             for (int i = 0; i < Produced_Cube.Length; i++)
             {
                 if (flag)
-                    Produced_Cube[i].GetComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.Continuous;
+                    Produced_Cube[i].GetComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
                 else
                     Produced_Cube[i].GetComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.Discrete;
 
@@ -192,7 +194,7 @@ public class Shape_Control : MonoBehaviour
             for (int i = 0; i < Produced_Cone.Length; i++)
             {
                 if (flag)
-                    Produced_Cone[i].GetComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.Continuous;
+                    Produced_Cone[i].GetComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
                 else
                     Produced_Cone[i].GetComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.Discrete;
             }
@@ -202,7 +204,7 @@ public class Shape_Control : MonoBehaviour
             for(int i = 0; i < Produced_Capsule.Length; i++)
             {
                 if (flag)
-                    Produced_Capsule[i].GetComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.Continuous;
+                    Produced_Capsule[i].GetComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
                 else
                     Produced_Capsule[i].GetComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.Discrete;
             }
@@ -274,6 +276,12 @@ public class Shape_Control : MonoBehaviour
         {
             StartCoroutine(Destroy_Cylinder());
         }
+    }
+
+
+    public void setobject_size(string massnew)
+    {
+        size_now= float.Parse(massnew);
     }
 
 

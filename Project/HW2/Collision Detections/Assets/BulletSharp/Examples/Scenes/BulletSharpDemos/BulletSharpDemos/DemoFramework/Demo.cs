@@ -19,6 +19,8 @@ namespace DemoFramework
         int frameCount;
 
         float _frameDelta;
+        double timeconsumedperthousand;
+        int thousandstep = 0;
         public float FrameDelta
         {
             get { return _frameDelta; }
@@ -251,7 +253,8 @@ namespace DemoFramework
         {
             _frameDelta = clock.Update();
             frameAccumulator += _frameDelta;
-            ++frameCount;
+            //UnityEngine.Debug.Log(frameAccumulator);
+           ++frameCount;
             if (frameAccumulator >= 1.0f)
             {
                 FramesPerSecond = frameCount / frameAccumulator;
@@ -265,6 +268,12 @@ namespace DemoFramework
                 var watch = System.Diagnostics.Stopwatch.StartNew();
                 _world.StepSimulation(_frameDelta);
                 watch.Stop();
+                timeconsumedperthousand += watch.Elapsed.TotalMilliseconds;
+                thousandstep += 1;
+                if(thousandstep==1000)
+                {
+                    UnityEngine.Debug.Log("Thousand-step: " + timeconsumedperthousand / 1000);
+                }
                 //UnityEngine.Debug.Log("One-step: " + watch.Elapsed.TotalMilliseconds) ;
                 //UnityEngine.Debug.Log("One-step: " + 1.0f/(watch.Elapsed.TotalSeconds));
             }

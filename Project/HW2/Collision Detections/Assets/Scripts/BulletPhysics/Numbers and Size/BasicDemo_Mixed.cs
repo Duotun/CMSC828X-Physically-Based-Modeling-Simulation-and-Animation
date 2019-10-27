@@ -48,8 +48,10 @@ namespace BasicDemo_Mixed
             Dispatcher = new CollisionDispatcher(CollisionConf);
 
             Broadphase = new DbvtBroadphase();
+            //AxisSweep3 s = new AxisSweep3(Vector3.One, new Vector3(50, 50, 50));
 
             World = new DiscreteDynamicsWorld(Dispatcher, Broadphase, null, CollisionConf);
+            //World = new DiscreteDynamicsWorld(Dispatcher, s, null, CollisionConf);
             World.Gravity = this.gravity;
 
             // create the ground

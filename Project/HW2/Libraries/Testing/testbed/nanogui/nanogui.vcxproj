@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F036F4F1-B528-3085-A438-D6BA3E869DC4}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>nanogui</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\bin\testbed\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">nanogui.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">nanogui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\bin\testbed\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">nanogui.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">nanogui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\bin\testbed\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">nanogui.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">nanogui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\bin\testbed\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">nanogui.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">nanogui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glad\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\eigen;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glfw\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\nanovg\src;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -g -O0 -fprofile-arcs -ftest-coverage</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NANOGUI_EIGEN_DONT_ALIGN;_CRT_SECURE_NO_WARNINGS;IS_PROFILING_ACTIVE;IS_LOGGING_ACTIVE;IS_DOUBLE_PRECISION_ENABLED;NANOGUI_SHARED;NVG_SHARED;GLAD_GLAPI_EXPORT;NANOGUI_GLAD;CMAKE_INTDIR="Debug";nanogui_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NANOGUI_EIGEN_DONT_ALIGN;_CRT_SECURE_NO_WARNINGS;IS_PROFILING_ACTIVE;IS_LOGGING_ACTIVE;IS_DOUBLE_PRECISION_ENABLED;NANOGUI_SHARED;NVG_SHARED;GLAD_GLAPI_EXPORT;NANOGUI_GLAD;CMAKE_INTDIR=\"Debug\";nanogui_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glad\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\eigen;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glfw\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\nanovg\src;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glad\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\eigen;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glfw\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\nanovg\src;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing/testbed/nanogui/lib/Debug/nanogui.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing/bin/testbed/nanogui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glad\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\eigen;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glfw\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\nanovg\src;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -g -O0 -fprofile-arcs -ftest-coverage</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NANOGUI_EIGEN_DONT_ALIGN;NDEBUG;_CRT_SECURE_NO_WARNINGS;IS_PROFILING_ACTIVE;IS_LOGGING_ACTIVE;IS_DOUBLE_PRECISION_ENABLED;NANOGUI_SHARED;NVG_SHARED;GLAD_GLAPI_EXPORT;NANOGUI_GLAD;CMAKE_INTDIR="Release";nanogui_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NANOGUI_EIGEN_DONT_ALIGN;NDEBUG;_CRT_SECURE_NO_WARNINGS;IS_PROFILING_ACTIVE;IS_LOGGING_ACTIVE;IS_DOUBLE_PRECISION_ENABLED;NANOGUI_SHARED;NVG_SHARED;GLAD_GLAPI_EXPORT;NANOGUI_GLAD;CMAKE_INTDIR=\"Release\";nanogui_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glad\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\eigen;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glfw\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\nanovg\src;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glad\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\eigen;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glfw\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\nanovg\src;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing/testbed/nanogui/lib/Release/nanogui.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ProgramDataBaseFile>E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing/bin/testbed/nanogui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glad\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\eigen;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glfw\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\nanovg\src;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -g -O0 -fprofile-arcs -ftest-coverage</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NANOGUI_EIGEN_DONT_ALIGN;NDEBUG;_CRT_SECURE_NO_WARNINGS;IS_PROFILING_ACTIVE;IS_LOGGING_ACTIVE;IS_DOUBLE_PRECISION_ENABLED;NANOGUI_SHARED;NVG_SHARED;GLAD_GLAPI_EXPORT;NANOGUI_GLAD;CMAKE_INTDIR="MinSizeRel";nanogui_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NANOGUI_EIGEN_DONT_ALIGN;NDEBUG;_CRT_SECURE_NO_WARNINGS;IS_PROFILING_ACTIVE;IS_LOGGING_ACTIVE;IS_DOUBLE_PRECISION_ENABLED;NANOGUI_SHARED;NVG_SHARED;GLAD_GLAPI_EXPORT;NANOGUI_GLAD;CMAKE_INTDIR=\"MinSizeRel\";nanogui_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glad\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\eigen;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glfw\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\nanovg\src;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glad\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\eigen;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glfw\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\nanovg\src;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing/testbed/nanogui/lib/MinSizeRel/nanogui.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ProgramDataBaseFile>E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing/bin/testbed/MinSizeRel/nanogui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glad\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\eigen;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glfw\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\nanovg\src;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -g -O0 -fprofile-arcs -ftest-coverage</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NANOGUI_EIGEN_DONT_ALIGN;NDEBUG;_CRT_SECURE_NO_WARNINGS;IS_PROFILING_ACTIVE;IS_LOGGING_ACTIVE;IS_DOUBLE_PRECISION_ENABLED;NANOGUI_SHARED;NVG_SHARED;GLAD_GLAPI_EXPORT;NANOGUI_GLAD;CMAKE_INTDIR="RelWithDebInfo";nanogui_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NANOGUI_EIGEN_DONT_ALIGN;NDEBUG;_CRT_SECURE_NO_WARNINGS;IS_PROFILING_ACTIVE;IS_LOGGING_ACTIVE;IS_DOUBLE_PRECISION_ENABLED;NANOGUI_SHARED;NVG_SHARED;GLAD_GLAPI_EXPORT;NANOGUI_GLAD;CMAKE_INTDIR=\"RelWithDebInfo\";nanogui_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glad\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\eigen;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glfw\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\nanovg\src;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glad\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\eigen;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\glfw\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\ext\nanovg\src;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\include;E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing/testbed/nanogui/lib/RelWithDebInfo/nanogui.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ProgramDataBaseFile>E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing/bin/testbed/RelWithDebInfo/nanogui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\reactphysics3d-0.7.1\reactphysics3d-0.7.1\testbed\nanogui\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1/testbed/nanogui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\Cmake\bin\cmake.exe "-SE:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1" "-BE:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing" --check-stamp-file "E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing/testbed/nanogui/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Cmake\share\cmake-3.16\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Cmake\share\cmake-3.16\Modules\CheckCXXCompilerFlag.cmake;D:\Cmake\share\cmake-3.16\Modules\CheckCXXSourceCompiles.cmake;D:\Cmake\share\cmake-3.16\Modules\CheckCXXSourceRuns.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1/testbed/nanogui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\Cmake\bin\cmake.exe "-SE:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1" "-BE:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing" --check-stamp-file "E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing/testbed/nanogui/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Cmake\share\cmake-3.16\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Cmake\share\cmake-3.16\Modules\CheckCXXCompilerFlag.cmake;D:\Cmake\share\cmake-3.16\Modules\CheckCXXSourceCompiles.cmake;D:\Cmake\share\cmake-3.16\Modules\CheckCXXSourceRuns.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1/testbed/nanogui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\Cmake\bin\cmake.exe "-SE:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1" "-BE:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing" --check-stamp-file "E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing/testbed/nanogui/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Cmake\share\cmake-3.16\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Cmake\share\cmake-3.16\Modules\CheckCXXCompilerFlag.cmake;D:\Cmake\share\cmake-3.16\Modules\CheckCXXSourceCompiles.cmake;D:\Cmake\share\cmake-3.16\Modules\CheckCXXSourceRuns.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1/testbed/nanogui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\Cmake\bin\cmake.exe "-SE:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/reactphysics3d-0.7.1/reactphysics3d-0.7.1" "-BE:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing" --check-stamp-file "E:/UMD/Course/CMSC 828X/Assignments/HW2/Libraries/Testing/testbed/nanogui/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Cmake\share\cmake-3.16\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Cmake\share\cmake-3.16\Modules\CheckCXXCompilerFlag.cmake;D:\Cmake\share\cmake-3.16\Modules\CheckCXXSourceCompiles.cmake;D:\Cmake\share\cmake-3.16\Modules\CheckCXXSourceRuns.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\nanovg.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\glad.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\nanogui_resources.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\glutil.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\common.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\widget.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\theme.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\layout.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\screen.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\label.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\window.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\popup.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\checkbox.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\button.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\popupbutton.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\combobox.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\progressbar.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\slider.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\messagedialog.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\textbox.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\imagepanel.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\imageview.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\vscrollpanel.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\colorwheel.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\colorpicker.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\graph.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\stackedwidget.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\tabheader.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\tabwidget.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\glcanvas.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.dir\$(Configuration)\serializer.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\ext_build\glfw\src\glfw_objects.dir\$(Configuration)\context.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\ext_build\glfw\src\glfw_objects.dir\$(Configuration)\init.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\ext_build\glfw\src\glfw_objects.dir\$(Configuration)\input.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\ext_build\glfw\src\glfw_objects.dir\$(Configuration)\monitor.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\ext_build\glfw\src\glfw_objects.dir\$(Configuration)\vulkan.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\ext_build\glfw\src\glfw_objects.dir\$(Configuration)\window.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\ext_build\glfw\src\glfw_objects.dir\$(Configuration)\win32_init.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\ext_build\glfw\src\glfw_objects.dir\$(Configuration)\win32_joystick.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\ext_build\glfw\src\glfw_objects.dir\$(Configuration)\win32_monitor.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\ext_build\glfw\src\glfw_objects.dir\$(Configuration)\win32_time.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\ext_build\glfw\src\glfw_objects.dir\$(Configuration)\win32_tls.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\ext_build\glfw\src\glfw_objects.dir\$(Configuration)\win32_window.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\ext_build\glfw\src\glfw_objects.dir\$(Configuration)\wgl_context.obj" />
+    <Object Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\ext_build\glfw\src\glfw_objects.dir\$(Configuration)\egl_context.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\ZERO_CHECK.vcxproj">
+      <Project>{FB4609EF-E167-3F1D-B57E-59D4E3EE654B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\ext_build\glfw\src\glfw_objects.vcxproj">
+      <Project>{C6F58291-E6CE-3C28-BF2C-FC5C259570D2}</Project>
+      <Name>glfw_objects</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\UMD\Course\CMSC 828X\Assignments\HW2\Libraries\Testing\testbed\nanogui\nanogui-obj.vcxproj">
+      <Project>{651A5A51-68C9-37E7-84F5-087B0764B8B0}</Project>
+      <Name>nanogui-obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -152,6 +152,8 @@ CubesScene::CubesScene(const std::string& name, EngineSettings& settings)
 	
 
     // Get the physics engine parameters
+	
+	getDynamicsWorld()->setIsGratityEnabled(false);
     mEngineSettings.isGravityEnabled = getDynamicsWorld()->isGravityEnabled();
     rp3d::Vector3 gravityVector = getDynamicsWorld()->getGravity();
     //mEngineSettings.gravity = openglframework::Vector3(gravityVector.x, gravityVector.y, gravityVector.z);

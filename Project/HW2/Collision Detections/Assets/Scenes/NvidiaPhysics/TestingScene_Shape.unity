@@ -2019,8 +2019,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: setsize_1
+      - m_Target: {fileID: 1553928263}
+        m_MethodName: setobject_size
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
