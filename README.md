@@ -16,4 +16,9 @@ Homework 2: Collision Detection Between Rigid Bodies
 - User Control for Multiple Shapes and LOD (Level of Details)
 - 3 Different Libraries
 
+Click on the following images for video demos:
+
 [![Watch the video](https://img.youtube.com/vi/H-dTXuRTb7c/hqdefault.jpg)](https://youtu.be/H-dTXuRTb7c)
+[![Watch the video](https://img.youtube.com/vi/QrYMIdjhnes/hqdefault.jpg)](https://youtu.be/QrYMIdjhnes)
+
+
