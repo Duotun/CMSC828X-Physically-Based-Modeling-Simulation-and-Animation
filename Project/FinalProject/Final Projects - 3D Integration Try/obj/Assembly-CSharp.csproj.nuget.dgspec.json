@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Github\\CMSC828X\\Project\\FinalProject\\Final Projects - 3D Integration Try\\Assembly-CSharp.csproj": {}
+  },
+  "projects": {
+    "E:\\Github\\CMSC828X\\Project\\FinalProject\\Final Projects - 3D Integration Try\\Assembly-CSharp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Github\\CMSC828X\\Project\\FinalProject\\Final Projects - 3D Integration Try\\Assembly-CSharp.csproj",
+        "projectName": "Assembly-CSharp",
+        "projectPath": "E:\\Github\\CMSC828X\\Project\\FinalProject\\Final Projects - 3D Integration Try\\Assembly-CSharp.csproj",
+        "packagesPath": "C:\\Users\\yonng\\.nuget\\packages\\",
+        "outputPath": "E:\\Github\\CMSC828X\\Project\\FinalProject\\Final Projects - 3D Integration Try\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\yonng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net471"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net471": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net471": {
+          "dependencies": {
+            "MathNet.Numerics": {
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "MathNet.Numerics.MKL.Win-x64": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

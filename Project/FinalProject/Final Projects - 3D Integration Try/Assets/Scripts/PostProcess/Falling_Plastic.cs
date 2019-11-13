@@ -1,0 +1,141 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using MathNet.Numerics;
+using MathNet.Numerics.LinearAlgebra;
+using MathNet.Numerics.LinearAlgebra.Factorization;
+using MathNet.Numerics.Data.Text;
+
+public class Falling_Plastic: MonoBehaviour
+{
+    // Start is called before the first frame update
+    Sound Sound;
+    float forceamp;
+    float forceoffset=0.1f;   //directly controlled in the scripts
+    Vector3[] displacedVertices;
+
+    Matrix<float> G;
+    Matrix<float> D;
+    Matrix<float> M;
+    Vector<float> gain;
+
+    //float Beta = 0.0000000023f;
+    //float Alpha = 0.00125f;
+    float Beta = 1.45e-10f;
+    float Alpha = 0.005f; //rayleigh damping, metal
+
+
+    //wood? ->float Alpha = 0.15f; 
+    void Start()
+    {
+       
+
+    }
+
+    private void OnEnable()
+    {
+        Control.UseNativeMKL();
+        G = DelimitedReader.Read<float>("Gmatrix.csv", false, ",", false);
+        D = DelimitedReader.Read<float>("Dmatrix.csv", false, ",", false);
+        M = DelimitedReader.Read<float>("Mmatrix.csv", false, ",", false);
+        displacedVertices = this.GetComponentInParent<MeshFilter>().sharedMesh.vertices;
+        Sound = this.GetComponent<Sound>();
+    }
+
+    void OnCollisionEnter(Collision other)
+    {     
+        forceamp = other.impulse.magnitude / Time.fixedDeltaTime;
+        Vector3 point = Vector3.zero;
+        for(int i=0;i<other.contacts.Length;i++)
+        {
+            point += other.contacts[i].point;
+        }
+        point /= other.contacts.Length;  //averaged point contacts
+        point += other.impulse.normalized * forceoffset;
+        HandleInput(point);
+        //other.impulse
+        //print("Points colliding: " + other.contacts.Length);
+        //print("First point that collided: " + other.contacts[0].point);
+
+    }
+    void OnCollisionExit(Collision other)
+    {
+        //Debug.Log(other.relativeVelocity);
+    }
+    void HandleInput(Vector3 point)
+    {     
+      AddForce(point, forceamp);       
+    }
+
+    public void AddForce(Vector3 point, float force)
+    {
+        var F = Vector<float>.Build;
+        Vector<float> tmpForce = F.Dense(displacedVertices.Length);
+
+        for (int i = 0; i < displacedVertices.Length; i++)
+        {
+            AddForceVertex(i, point, force, ref tmpForce);
+
+        }
+
+        Matrix<float> ff = Matrix<float>.Build.Dense(displacedVertices.Length / 3, 3);
+        /*for (int i = 0; i < displacedVertices.Length / 3; i++)
+        {
+            ff[i, 0] = point.x;
+            ff[i, 1] = point.y;
+            ff[i, 2] = point.z;
+        }
+        */
+        // Debug.DrawLine(Camera.main.transform.position, point);
+        //print(tmpForce);
+        gain = G.Transpose().Multiply(tmpForce);
+        //print(gain);
+        //gain_process();
+        SoundSimulator(gain);
+    }
+
+    void AddForceVertex(int i, Vector3 point, float force, ref Vector<float> tmpForce)
+    {
+        Vector3 pointToVertex = point - displacedVertices[i];
+        float attenuatedForce = force / (1f + pointToVertex.sqrMagnitude);
+        //var f = pointToVertex.normalized * attenuatedForce;
+        tmpForce[i] = attenuatedForce;
+    }
+
+    void SoundSimulator(Vector<float> gain)
+    {
+        float[] samples = new float[44100];
+        //simulate 1 seconds
+        int sampleFreq = 44100;
+        //print(D.RowCount);
+
+        for (int i = 0; i < D.RowCount; i++)
+        {
+
+            float d = 0.5f * (Alpha + Beta * D[i, i]);
+            if ((D[i, i] - d * d) < 0 || D[i, i] <= 0) continue;
+            float omega = Mathf.Sqrt(D[i, i] - d * d);
+            //print(gain[i]);      
+            //omega = Mathf.PI * 2 * 2670.117188f;
+            for (int j = 0; j < samples.Length; j++)
+            {
+
+                samples[j] += gain[i] * Mathf.Exp(-d * j) * Mathf.Sin(j * omega / sampleFreq);
+            }
+
+        }
+
+        Sound.soundplay(samples);
+
+    }
+
+    void gain_process()
+    {
+        float maxnum = 0.0f;
+        maxnum = gain.AbsoluteMaximum();
+        for (int i = 0; i < gain.Count; i++)
+        {
+            gain[i] /= maxnum;
+        }
+    }
+}

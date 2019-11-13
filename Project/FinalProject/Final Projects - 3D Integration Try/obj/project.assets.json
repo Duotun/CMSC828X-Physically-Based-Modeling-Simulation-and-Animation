@@ -1,0 +1,196 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.1": {
+      "MathNet.Numerics/4.9.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Runtime.Serialization"
+        ],
+        "compile": {
+          "lib/net461/MathNet.Numerics.dll": {}
+        },
+        "runtime": {
+          "lib/net461/MathNet.Numerics.dll": {}
+        }
+      },
+      "MathNet.Numerics.MKL.Win-x64/2.3.0": {
+        "type": "package",
+        "build": {
+          "build/MathNet.Numerics.MKL.Win-x64.targets": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.1/win": {
+      "MathNet.Numerics/4.9.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Runtime.Serialization"
+        ],
+        "compile": {
+          "lib/net461/MathNet.Numerics.dll": {}
+        },
+        "runtime": {
+          "lib/net461/MathNet.Numerics.dll": {}
+        }
+      },
+      "MathNet.Numerics.MKL.Win-x64/2.3.0": {
+        "type": "package",
+        "build": {
+          "build/MathNet.Numerics.MKL.Win-x64.targets": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.1/win-x64": {
+      "MathNet.Numerics/4.9.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Runtime.Serialization"
+        ],
+        "compile": {
+          "lib/net461/MathNet.Numerics.dll": {}
+        },
+        "runtime": {
+          "lib/net461/MathNet.Numerics.dll": {}
+        }
+      },
+      "MathNet.Numerics.MKL.Win-x64/2.3.0": {
+        "type": "package",
+        "build": {
+          "build/MathNet.Numerics.MKL.Win-x64.targets": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.1/win-x86": {
+      "MathNet.Numerics/4.9.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Runtime.Serialization"
+        ],
+        "compile": {
+          "lib/net461/MathNet.Numerics.dll": {}
+        },
+        "runtime": {
+          "lib/net461/MathNet.Numerics.dll": {}
+        }
+      },
+      "MathNet.Numerics.MKL.Win-x64/2.3.0": {
+        "type": "package",
+        "build": {
+          "build/MathNet.Numerics.MKL.Win-x64.targets": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MathNet.Numerics/4.9.0": {
+      "sha512": "4cYzhuMDq57oC6lwhMmuigdhP+oywmp1bMtFzvzz4wYr5eWbg0JLDPo/L1juqDkIBj+rc3FrxUEX7jcHRmnF+w==",
+      "type": "package",
+      "path": "mathnet.numerics/4.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/MathNet.Numerics.dll",
+        "lib/net40/MathNet.Numerics.xml",
+        "lib/net461/MathNet.Numerics.dll",
+        "lib/net461/MathNet.Numerics.xml",
+        "lib/netstandard1.3/MathNet.Numerics.dll",
+        "lib/netstandard1.3/MathNet.Numerics.xml",
+        "lib/netstandard2.0/MathNet.Numerics.dll",
+        "lib/netstandard2.0/MathNet.Numerics.xml",
+        "mathnet.numerics.4.9.0.nupkg.sha512",
+        "mathnet.numerics.nuspec"
+      ]
+    },
+    "MathNet.Numerics.MKL.Win-x64/2.3.0": {
+      "sha512": "2SEKtOW1CeHAuQ0RzqM5vHgo+UDGvixGtXhvY/wJXzFabCrTIsRQVy6bxRXtw0Y34gAiZFl+KwfPGN3PESj03A==",
+      "type": "package",
+      "path": "mathnet.numerics.mkl.win-x64/2.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MathNet.Numerics.MKL.Win-x64.targets",
+        "build/x64/MathNet.Numerics.MKL.dll",
+        "build/x64/libiomp5md.dll",
+        "license.txt",
+        "mathnet.numerics.mkl.win-x64.2.3.0.nupkg.sha512",
+        "mathnet.numerics.mkl.win-x64.nuspec",
+        "readme.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.1": [
+      "MathNet.Numerics >= 4.9.0",
+      "MathNet.Numerics.MKL.Win-x64 >= 2.3.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\yonng\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\Github\\CMSC828X\\Project\\FinalProject\\Final Projects - 3D Integration Try\\Assembly-CSharp.csproj",
+      "projectName": "Assembly-CSharp",
+      "projectPath": "E:\\Github\\CMSC828X\\Project\\FinalProject\\Final Projects - 3D Integration Try\\Assembly-CSharp.csproj",
+      "packagesPath": "C:\\Users\\yonng\\.nuget\\packages\\",
+      "outputPath": "E:\\Github\\CMSC828X\\Project\\FinalProject\\Final Projects - 3D Integration Try\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\yonng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net471"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net471": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net471": {
+        "dependencies": {
+          "MathNet.Numerics": {
+            "target": "Package",
+            "version": "[4.9.0, )"
+          },
+          "MathNet.Numerics.MKL.Win-x64": {
+            "target": "Package",
+            "version": "[2.3.0, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}
