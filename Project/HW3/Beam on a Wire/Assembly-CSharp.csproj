@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\General Textures\scripts\SmoothCamRot.cs" />
+    <Compile Include="Assets\Scripts\AnimationController.cs" />
     <Compile Include="Assets\Scripts\CircleRender.cs" />
     <Compile Include="Assets\Scripts\IntegrationMethods.cs" />
     <Compile Include="Assets\Scripts\IntegrationMethods_theta.cs" />
@@ -90,14 +91,14 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>E:/UMD/Course/CMSC 828X/Assignments/HW3/Projects/Beam on a Wire/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>E:/UMD/Course/CMSC 828X/Assignments/HW3/Projects/Beam on a Wire/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>E:/UMD/Course/CMSC 828X/Assignments/HW3/Projects/Beam on a Wire/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>E:/UMD/Course/CMSC 828X/Assignments/HW3/Projects/Beam on a Wire/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>E:/UMD/Course/CMSC 828X/Assignments/HW3/Projects/Beam on a Wire/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Download/UnityEditor/2019.2.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

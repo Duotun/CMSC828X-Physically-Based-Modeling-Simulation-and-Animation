@@ -66,11 +66,10 @@ public class CircleRender : MonoBehaviour
     void Update()
     {
         
-        if(radius!=SimulationUI.R)
+        if(radius!=SimulationPrep.R)
         {
-            //update radius to fit change
-            
-            radius = SimulationUI.R;
+            //update radius to fit change           
+            radius = SimulationPrep.R;
             SetupCircle();
            
         }
