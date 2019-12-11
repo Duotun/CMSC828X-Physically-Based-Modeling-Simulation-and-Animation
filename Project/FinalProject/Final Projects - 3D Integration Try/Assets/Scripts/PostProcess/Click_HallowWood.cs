@@ -26,7 +26,6 @@ public class Click_HallowWood : MonoBehaviour
         Control.UseNativeMKL();
         G = DelimitedReader.Read<float>("Gmatrix2.csv", false, ",", false);
         D = DelimitedReader.Read<float>("Dmatrix2.csv", false, ",", false);
-        M = DelimitedReader.Read<float>("Mmatrix.csv", false, ",", false);
 
     }
 

@@ -25,7 +25,7 @@ public class EVD : MonoBehaviour
     {
         InitialMeshData();
         ConstructStiffMatrix();
-        ConstructMassMatrix();
+        ConstructMassMatrix();   //let matlab to compute a more precise evd
         //extmat();
 
     }
@@ -121,7 +121,7 @@ public class EVD : MonoBehaviour
         return 0f;
     }
 
-    public void extmat()
+    public void extmat()  //triangular mesh now
     {
         //because here my mass matrix is a diagonal matrix
         var c = Mass.Inverse().Multiply(Stiff);

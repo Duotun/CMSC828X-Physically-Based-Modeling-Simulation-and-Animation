@@ -79,8 +79,23 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/Github/CMSC828X/Project/FinalProject/Final Projects - 3D Integration Try/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>E:/Github/CMSC828X/Project/FinalProject/Final Projects - 3D Integration Try/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>E:/Github/CMSC828X/Project/FinalProject/Final Projects - 3D Integration Try/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Jobs">
+      <HintPath>E:/Github/CMSC828X/Project/FinalProject/Final Projects - 3D Integration Try/Library/ScriptAssemblies/Unity.Jobs.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Jobs.Editor">
+      <HintPath>E:/Github/CMSC828X/Project/FinalProject/Final Projects - 3D Integration Try/Library/ScriptAssemblies/Unity.Jobs.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>E:/Github/CMSC828X/Project/FinalProject/Final Projects - 3D Integration Try/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>E:/Github/CMSC828X/Project/FinalProject/Final Projects - 3D Integration Try/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/Github/CMSC828X/Project/FinalProject/Final Projects - 3D Integration Try/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -96,6 +111,12 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>E:/Github/CMSC828X/Project/FinalProject/Final Projects - 3D Integration Try/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>E:/Github/CMSC828X/Project/FinalProject/Final Projects - 3D Integration Try/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>E:/Github/CMSC828X/Project/FinalProject/Final Projects - 3D Integration Try/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>E:/Github/CMSC828X/Project/FinalProject/Final Projects - 3D Integration Try/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
@@ -285,6 +306,12 @@
     </Reference>
     <Reference Include="MathNet.Numerics">
       <HintPath>E:/Github/CMSC828X/Project/FinalProject/Final Projects - 3D Integration Try/Assets/Plugins/MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>E:/Github/CMSC828X/Project/FinalProject/Final Projects - 3D Integration Try/Library/PackageCache/com.unity.burst@1.1.2/Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>E:/Github/CMSC828X/Project/FinalProject/Final Projects - 3D Integration Try/Library/PackageCache/com.unity.collections@0.1.1-preview/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:/Download/UnityEditor/2019.2.4f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

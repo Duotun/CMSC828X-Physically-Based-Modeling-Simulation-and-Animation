@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/CubeScene_click.unity
+- path: Assets/Scenes/FallingScene - Complex Objects.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

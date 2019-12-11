@@ -5,6 +5,10 @@ using MathNet.Numerics;
 using MathNet.Numerics.LinearAlgebra;
 using MathNet.Numerics.LinearAlgebra.Factorization;
 using MathNet.Numerics.Data.Text;
+using System.Threading;
+using Unity.Jobs;
+using Unity.Collections;
+using Unity.Burst;
 
 public class Falling_Aluminum : MonoBehaviour
 {
@@ -23,20 +27,29 @@ public class Falling_Aluminum : MonoBehaviour
     float Alpha = 0.000020f;  //rayleigh damping, metal
 
     //wood? ->float Alpha = 0.15f; 
+    float[] soundsamples;
+    float[] D_data;
+
+    int readflag = 0;
     void Start()
     {
-
+          
 
     }
 
-    private void OnEnable()
-    {
-        Control.UseNativeMKL();
-        G = DelimitedReader.Read<float>("Gmatrix.csv", false, ",", false);
-        D = DelimitedReader.Read<float>("Dmatrix.csv", false, ",", false);
-        M = DelimitedReader.Read<float>("Mmatrix.csv", false, ",", false);
-        displacedVertices = this.GetComponentInParent<MeshFilter>().sharedMesh.vertices;
-        Sound = this.GetComponent<Sound>();
+    private void OnEnable() {
+        if (readflag==0)
+        {
+            Control.UseNativeMKL();
+            G = DelimitedReader.Read<float>("Gmatrix.csv", false, ",", false);
+            D = DelimitedReader.Read<float>("Dmatrix.csv", false, ",", false);
+            displacedVertices = this.GetComponentInParent<MeshFilter>().sharedMesh.vertices;
+            gain = Vector<float>.Build.Random(G.RowCount);
+            soundsamples = new float[44100];
+            D_data = D.ToRowMajorArray();
+            Sound = this.GetComponent<Sound>();
+            readflag = 1;
+        }
     }
 
     void OnCollisionEnter(Collision other)
@@ -69,13 +82,14 @@ public class Falling_Aluminum : MonoBehaviour
         var F = Vector<float>.Build;
         Vector<float> tmpForce = F.Dense(displacedVertices.Length);
 
-        for (int i = 0; i < displacedVertices.Length; i++)
+       
+        for (int i = 0; i < displacedVertices.Length; i++)   //could optimise here 
         {
             AddForceVertex(i, point, force, ref tmpForce);
 
         }
 
-        Matrix<float> ff = Matrix<float>.Build.Dense(displacedVertices.Length / 3, 3);
+        //Matrix<float> ff = Matrix<float>.Build.Dense(displacedVertices.Length / 3, 3);
         /*for (int i = 0; i < displacedVertices.Length / 3; i++)
         {
             ff[i, 0] = point.x;
@@ -86,9 +100,32 @@ public class Falling_Aluminum : MonoBehaviour
         // Debug.DrawLine(Camera.main.transform.position, point);
         //print(tmpForce);
         gain = G.Transpose().Multiply(tmpForce);
-        //print(gain);
         //gain_process();
-        SoundSimulator(gain);
+        //StartCoroutine(SoundSimulator(gain));
+
+
+        //job system ways
+        var samples = new NativeArray<float>(44100, Allocator.Persistent);
+        var gainh = new NativeArray<float>(gain.ToArray(), Allocator.Persistent);
+        var D_array = new NativeArray<float>(D_data, Allocator.Persistent);
+        var job = new Soundplay()
+        {
+            D_data = D_array,
+            gain_data = gainh,
+            samplefrequencies = samples,
+            alpha = Alpha,
+            beta = Beta,
+            size = D.RowCount,
+        };
+        JobHandle jobHandle = job.Schedule();
+        jobHandle.Complete();
+        job.samplefrequencies.CopyTo(soundsamples);
+        Sound.soundplay(soundsamples);
+        samples.Dispose();
+        gainh.Dispose();
+        D_array.Dispose();
+
+
     }
 
     void AddForceVertex(int i, Vector3 point, float force, ref Vector<float> tmpForce)
@@ -99,13 +136,16 @@ public class Falling_Aluminum : MonoBehaviour
         tmpForce[i] = attenuatedForce;
     }
 
-    void SoundSimulator(Vector<float> gain)
+    IEnumerator SoundPrepration(Vector<float> gain)
+    {
+        yield return StartCoroutine(SoundSimulator(gain));
+    }
+    IEnumerator SoundSimulator(Vector<float> gain)
     {
         float[] samples = new float[44100];
         //simulate 1 seconds
         int sampleFreq = 44100;
-        //print(D.RowCount);
-
+     
         for (int i = 0; i < D.RowCount; i++)
         {
 
@@ -119,10 +159,16 @@ public class Falling_Aluminum : MonoBehaviour
 
                 samples[j] += gain[i] * Mathf.Exp(-d * j) * Mathf.Sin(j * omega / sampleFreq);
             }
+            
 
         }
-
+        yield return null;
+        for (int i = 0; i < 2000; i++)
+        {
+            if (samples[i] != 0) print(samples[i]);
+        }
         Sound.soundplay(samples);
+        
 
     }
 
@@ -133,6 +179,44 @@ public class Falling_Aluminum : MonoBehaviour
         for (int i = 0; i < gain.Count; i++)
         {
             gain[i] /= maxnum;
+        }
+    }
+
+   [BurstCompile]
+   public struct Soundplay:IJob
+    {
+        public NativeArray<float> samplefrequencies;
+        [ReadOnly]
+        public NativeArray<float> gain_data;
+        [ReadOnly]
+        public NativeArray<float> D_data;
+        [ReadOnly]
+        public float alpha;
+        [ReadOnly]
+        public float beta;
+        public int size;
+        public void Execute()
+        {
+            float ampval = 0.0f;
+            for (int i = 0; i <size; i++)
+            {
+
+                float d = 0.5f * (alpha + beta * D_data[i*size+i]);
+                if ((D_data[i * size + i] - d * d) < 0 || D_data[i * size + i] <= 0) continue;
+                float omega = Mathf.Sqrt(D_data[i * size + i] - d * d);
+                //print(gain[i]);      
+                //omega = Mathf.PI * 2 * 2670.117188f;
+                for (int j = 0; j < samplefrequencies.Length; j++)
+                {
+                    //run- time acceleration for amplitude
+                    ampval = gain_data[i] * Mathf.Exp(-d * j);
+                    if (ampval < 2f) break;  //mode truncations
+                    samplefrequencies[j] += ampval* Mathf.Sin(j * omega / 44100);
+                    //print(samplefrequencies[j]);
+                }
+              
+            }
+           
         }
     }
 }
