@@ -9,8 +9,8 @@ public class Click_Aluminum : MonoBehaviour
 {
     // Start is called before the first frame update
     Sound Sound;
-    public float forceamp;
-    public float forceoffset;   //directly controlled in the scripts
+    float forceamp=550;
+    float forceoffset=10f;   //directly controlled in the scripts
     Vector3[] displacedVertices;
 
     Matrix<float> G;
@@ -20,24 +20,28 @@ public class Click_Aluminum : MonoBehaviour
 
     float Beta = 0.000000000023f;
     float Alpha = 0.000080f;  //rayleigh damping, metal
+
+    // object name
+    public string objname="";
     void Start()
     {
         Control.UseNativeMKL();
-        G = DelimitedReader.Read<float>("Gmatrix.csv", false, ",", false);
-        D = DelimitedReader.Read<float>("Dmatrix.csv", false, ",", false);
-        M = DelimitedReader.Read<float>("Mmatrix.csv", false, ",", false);
+        G = DelimitedReader.Read<float>("Gmatrix"+objname+".csv", false, ",", false);
+        D = DelimitedReader.Read<float>("Dmatrix"+objname+".csv", false, ",", false);
+        //print("Gmatrix" + objname + ".csv");
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
             HandleInput();
         }
     }
 
+    //change to arbitrary force impulse ()  
     void HandleInput()
     {
         Ray inputRay = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -55,7 +59,7 @@ public class Click_Aluminum : MonoBehaviour
                     displacedVertices[i] = transform.TransformPoint(displacedVertices[i]);
                 }
                 point += hit.normal * forceoffset;
-                //print(point);
+              
                 AddForce(point, forceamp);
             }
 
@@ -83,7 +87,7 @@ public class Click_Aluminum : MonoBehaviour
         // Debug.DrawLine(Camera.main.transform.position, point);
         //print(tmpForce);
         gain = G.Transpose().Multiply(tmpForce);
-        print(gain);
+      
         //gain_process();
         SoundSimulator(gain);
     }

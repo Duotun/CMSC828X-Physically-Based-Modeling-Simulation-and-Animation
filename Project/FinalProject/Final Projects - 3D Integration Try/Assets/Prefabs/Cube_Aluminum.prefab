@@ -232,3 +232,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22f7c0f62bfbccb438340826837db44a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objname: Cube

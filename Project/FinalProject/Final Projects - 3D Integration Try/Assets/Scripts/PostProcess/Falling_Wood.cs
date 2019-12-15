@@ -22,14 +22,14 @@ public class Falling_Wood : MonoBehaviour
     Vector<float> gain;
 
     float Beta = 1.45e-10f;
-    float Alpha = 0.05f;  //rayleigh damping
+    float Alpha = 0.045f;  //rayleigh damping
 
     //wood? ->float Alpha = 0.15f; 
+    float[] soundsamples;
+    float[] D_data;
 
     int readflag = 0;
-
-    float[] D_data;
-    float[] soundsamples;
+    public string objname;
     void Start()
     {
 
@@ -41,13 +41,14 @@ public class Falling_Wood : MonoBehaviour
         if (readflag == 0)
         {
             Control.UseNativeMKL();
-            G = DelimitedReader.Read<float>("Gmatrix2.csv", false, ",", false);
-            D = DelimitedReader.Read<float>("Dmatrix2.csv", false, ",", false);
+            G = DelimitedReader.Read<float>("Gmatrix" + objname + ".csv", false, ",", false);
+            D = DelimitedReader.Read<float>("Dmatrix" + objname + ".csv", false, ",", false);
             displacedVertices = this.GetComponentInParent<MeshFilter>().sharedMesh.vertices;
-            Sound = this.GetComponent<Sound>();
+            gain = Vector<float>.Build.Random(G.RowCount);
             soundsamples = new float[44100];
             D_data = D.ToRowMajorArray();
-            readflag = 0;
+            Sound = this.GetComponent<Sound>();
+            readflag = 1;
         }
     }
 
@@ -74,6 +75,7 @@ public class Falling_Wood : MonoBehaviour
     void HandleInput(Vector3 point)
     {
         AddForce(point, forceamp);
+        //print("Force: " + forceamp);
     }
 
     public void AddForce(Vector3 point, float force)
@@ -81,13 +83,14 @@ public class Falling_Wood : MonoBehaviour
         var F = Vector<float>.Build;
         Vector<float> tmpForce = F.Dense(displacedVertices.Length);
 
-        for (int i = 0; i < displacedVertices.Length; i++)
+
+        for (int i = 0; i < displacedVertices.Length; i++)   //could optimise here 
         {
             AddForceVertex(i, point, force, ref tmpForce);
 
         }
 
-        Matrix<float> ff = Matrix<float>.Build.Dense(displacedVertices.Length / 3, 3);
+        //Matrix<float> ff = Matrix<float>.Build.Dense(displacedVertices.Length / 3, 3);
         /*for (int i = 0; i < displacedVertices.Length / 3; i++)
         {
             ff[i, 0] = point.x;
@@ -98,7 +101,6 @@ public class Falling_Wood : MonoBehaviour
         // Debug.DrawLine(Camera.main.transform.position, point);
         //print(tmpForce);
         gain = G.Transpose().Multiply(tmpForce);
-        //print(gain);
         //gain_process();
         //StartCoroutine(SoundSimulator(gain));
 
@@ -123,6 +125,8 @@ public class Falling_Wood : MonoBehaviour
         samples.Dispose();
         gainh.Dispose();
         D_array.Dispose();
+
+
     }
 
     void AddForceVertex(int i, Vector3 point, float force, ref Vector<float> tmpForce)
@@ -132,18 +136,16 @@ public class Falling_Wood : MonoBehaviour
         //var f = pointToVertex.normalized * attenuatedForce;
         tmpForce[i] = attenuatedForce;
     }
+
     IEnumerator SoundPrepration(Vector<float> gain)
     {
         yield return StartCoroutine(SoundSimulator(gain));
-        //print("here");
     }
-
     IEnumerator SoundSimulator(Vector<float> gain)
     {
         float[] samples = new float[44100];
         //simulate 1 seconds
         int sampleFreq = 44100;
-        //print(D.RowCount);
 
         for (int i = 0; i < D.RowCount; i++)
         {
@@ -153,17 +155,21 @@ public class Falling_Wood : MonoBehaviour
             float omega = Mathf.Sqrt(D[i, i] - d * d);
             //print(gain[i]);      
             //omega = Mathf.PI * 2 * 2670.117188f;
-           /* for (int j = 0; j < samples.Length; j++)
+            for (int j = 0; j < samples.Length; j++)
             {
 
                 samples[j] += gain[i] * Mathf.Exp(-d * j) * Mathf.Sin(j * omega / sampleFreq);
             }
-            */
+
 
         }
-
-        //Sound.soundplay(samples);
         yield return null;
+        for (int i = 0; i < 2000; i++)
+        {
+            if (samples[i] != 0) print(samples[i]);
+        }
+        Sound.soundplay(samples);
+
 
     }
 
@@ -176,6 +182,7 @@ public class Falling_Wood : MonoBehaviour
             gain[i] /= maxnum;
         }
     }
+
     [BurstCompile]
     public struct Soundplay : IJob
     {
@@ -191,6 +198,7 @@ public class Falling_Wood : MonoBehaviour
         public int size;
         public void Execute()
         {
+            float ampval = 0.0f;
             for (int i = 0; i < size; i++)
             {
 
@@ -201,7 +209,10 @@ public class Falling_Wood : MonoBehaviour
                 //omega = Mathf.PI * 2 * 2670.117188f;
                 for (int j = 0; j < samplefrequencies.Length; j++)
                 {
-                    samplefrequencies[j] += gain_data[i] * Mathf.Exp(-d * j) * Mathf.Sin(j * omega / 44100);
+                    //run- time acceleration for amplitude
+                    ampval = gain_data[i] * Mathf.Exp(-d * j);
+                    if (ampval < 0.1f) break;  //mode truncations, small will leave more sounds
+                    samplefrequencies[j] += ampval * Mathf.Sin(j * omega / 44100);
                     //print(samplefrequencies[j]);
                 }
 

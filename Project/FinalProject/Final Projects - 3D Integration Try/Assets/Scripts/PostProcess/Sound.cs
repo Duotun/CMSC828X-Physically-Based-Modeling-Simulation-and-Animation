@@ -26,9 +26,8 @@ public class Sound : MonoBehaviour
     //compute force (impulse) first
     void OnCollisionEnter(Collision other)
     {
-          
-          //print("Points colliding: " + other.contacts.Length);
-          //print("First point that collided: " + other.contacts[0].point);
+        
+       
        
     }
     IEnumerator soundplay_simulator()
@@ -57,7 +56,8 @@ public class Sound : MonoBehaviour
         
     }
 
-    
-    
+
+
+
 
 }

@@ -40,10 +40,17 @@ public class EVD : MonoBehaviour
         }
         */
         Triangles = Object.sharedMesh.triangles;
-        youngs = 9e9f;    //aluminum
+        youngs = 20e10f;    //aluminum
+        rho = 2.4e3f;
+        /*
+        youngs = 9e10f;    //wo
+        rho = 0.4e3f;
+
+         youngs = 9e9f;    //aluminum
         rho = 2.7e3f;
+         */
         m = rho * VolumeOfMesh(Object.sharedMesh);
-        thickness = 1f;
+        thickness = 0.1f;
     }
     // Update is called once per frame
     void Update()

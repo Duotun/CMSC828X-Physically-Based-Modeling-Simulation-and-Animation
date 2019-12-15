@@ -23,14 +23,19 @@ public class Falling_Aluminum : MonoBehaviour
     Matrix<float> M;
     Vector<float> gain;
 
+    
     float Beta = 0.000000000023f;
     float Alpha = 0.000020f;  //rayleigh damping, metal
+    //float Beta = 1.5e-13f;
+    //float Alpha = 0.0000189f;
+
 
     //wood? ->float Alpha = 0.15f; 
     float[] soundsamples;
     float[] D_data;
 
     int readflag = 0;
+    public string objname;
     void Start()
     {
           
@@ -41,8 +46,8 @@ public class Falling_Aluminum : MonoBehaviour
         if (readflag==0)
         {
             Control.UseNativeMKL();
-            G = DelimitedReader.Read<float>("Gmatrix.csv", false, ",", false);
-            D = DelimitedReader.Read<float>("Dmatrix.csv", false, ",", false);
+            G = DelimitedReader.Read<float>("Gmatrix" + objname + ".csv", false, ",", false);
+            D = DelimitedReader.Read<float>("Dmatrix" + objname + ".csv", false, ",", false);
             displacedVertices = this.GetComponentInParent<MeshFilter>().sharedMesh.vertices;
             gain = Vector<float>.Build.Random(G.RowCount);
             soundsamples = new float[44100];
@@ -55,6 +60,7 @@ public class Falling_Aluminum : MonoBehaviour
     void OnCollisionEnter(Collision other)
     {
         forceamp = other.impulse.magnitude / Time.fixedDeltaTime;
+        //print("Force: " + forceamp);
         Vector3 point = Vector3.zero;
         for (int i = 0; i < other.contacts.Length; i++)
         {
@@ -210,7 +216,7 @@ public class Falling_Aluminum : MonoBehaviour
                 {
                     //run- time acceleration for amplitude
                     ampval = gain_data[i] * Mathf.Exp(-d * j);
-                    if (ampval < 2f) break;  //mode truncations
+                    if (ampval < 0.3f) break;  //mode truncations
                     samplefrequencies[j] += ampval* Mathf.Sin(j * omega / 44100);
                     //print(samplefrequencies[j]);
                 }

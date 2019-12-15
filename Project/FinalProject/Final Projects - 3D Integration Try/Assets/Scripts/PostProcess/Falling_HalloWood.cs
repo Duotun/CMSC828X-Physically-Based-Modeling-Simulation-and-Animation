@@ -31,6 +31,7 @@ public class Falling_HalloWood : MonoBehaviour
 
     float[] D_data;
     float[] soundsamples;
+    public string objname;
     void Start()
     {
        
@@ -42,8 +43,8 @@ public class Falling_HalloWood : MonoBehaviour
         if(readflag==0)
         {
             Control.UseNativeMKL();
-            G = DelimitedReader.Read<float>("Gmatrix2.csv", false, ",", false);
-            D = DelimitedReader.Read<float>("Dmatrix2.csv", false, ",", false);
+            G = DelimitedReader.Read<float>("Gmatrix" + objname + ".csv", false, ",", false);
+            D = DelimitedReader.Read<float>("Dmatrix" + objname + ".csv", false, ",", false);
             displacedVertices = this.GetComponentInParent<MeshFilter>().sharedMesh.vertices;
             Sound = this.GetComponent<Sound>();
             soundsamples = new float[44100];
